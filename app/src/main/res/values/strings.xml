@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SongSeikHong_5daysweather</string>
+    <string name="base_url">api.openweathermap.org/data/2.5/forecast</string>
+    <string name="search">Search</string>
+</resources>
