@@ -1,42 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardBackgroundColor="@color/black"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/purple_200"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp">
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <ImageView
+            android:layout_gravity="center"
             android:id="@+id/icon_iv"
-            android:layout_margin="16dp"
             android:layout_width="50dp"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp"
+            android:layout_margin="16dp" />
 
-        <LinearLayout
-            android:layout_margin="16dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/status_tv"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white" />
 
-            <TextView
-                android:id="@+id/status_2_tv"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/status_2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white" />
 
-        </LinearLayout>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white" />
+
 
     </LinearLayout>
 

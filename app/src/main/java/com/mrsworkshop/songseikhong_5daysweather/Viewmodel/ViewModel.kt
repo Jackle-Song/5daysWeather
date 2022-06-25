@@ -28,7 +28,7 @@ data class ListItem(
 	val pop: Double? = null,
 	val rain: Rain? = null,
 	val visibility: Int? = null,
-	val dtTxt: String? = null,
+	@SerializedName ("dt_txt") @Expose val dt_txt: String?,
 	@SerializedName ("weather") @Expose val weather: List<WeatherItem?>?,
 	val main: Main? = null,
 	val clouds: Clouds? = null,

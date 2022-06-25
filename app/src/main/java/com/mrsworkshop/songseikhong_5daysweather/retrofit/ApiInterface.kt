@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface ApiInterface {
     @GET("forecast")
-    suspend fun dailyForecast(@Query("q") cityName: String, @Query("appid") access_token: String, @Query("cnt") days : Int)
+    suspend fun dailyForecast(@Query("q") cityName: String, @Query("appid") access_token: String)
             : Response<ViewModel>
 
     companion object {
